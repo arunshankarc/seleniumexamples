@@ -1,0 +1,134 @@
+XPATH:
+=====
+
+xpath - address of element
+
+Absolute/Complete -  very accurate
+html/body/div/div[1]/div[1]/a/img
+
+
+
+Partial Xpath
+//
+//* -  all elements on the web page
+//a -  all links on the web page
+//*[@id='exampleInputEmail3']
+//*[@id='login1']
+//input[@id='login1']
+//*[@id="login1"]
+//*[@id="login1"]
+
+
+html/body/div[5]/div[2]/div[2]/div[2]/a[3]
+html/body/div[4]/div/div[1]/div[2]
+//*[@id='nav']/div[2]/div[2]/a[3]
+html/body/div/div[1]/div[1]/a/img
+
+//*[@id="intl_homepage1-zone-1"]/div[2]/div/div[1]/ul/li[1]/article/a/h2
+
+
+
+
+Customized xpath:
+
+
+Can 1 element have multiple xpaths?
+//input[@id='login1']
+//input[@name='login']
+//input[@name='login' and @id='login1']
+//input[@name='login' or @id='login1']
+//div[@class='login-form']/div[2]/input
+
+
+html/body/div/div[1]/div[1]/a/img
+//div[@class='floatL']/a/img
+
+html/body/div/div[2]/div[2]/div[1]/div/form/div/div[3]/div[2]/a
+//div[@class='floatR']/a
+//div[@class='f14 margTop10 form-label']/div[2]/a
+
+
+Can 2 elements have same xpath
+//a
+//*
+//div[@class='floatR']/a
+
+//*[@id="div_bdeal_scroller"]/div[1]/div/div/a/span
+//*[@id="div_bdeal_scroller"]/div[2]/div/div/a/span
+//span[@class='product_buynow']
+
+//a[text()='Books']
+//div[text()='Secured Login']
+
+
+yui_3_18_0_3_1515920586500_1069
+yui_3_18_0_3_1515920654231_102
+
+Constant7125387618263891
+1725378128381263Constant
+17263576125Constant127635761235
+7162535127357125375123517
+
+//a[starts-with(@id,'Constant')]
+//a[contains(@id,'Constant')]
+
+//span[starts-with(@id,'topcat')]
+
+
+
+CSS:
+====
+
+
+ #- refers to id
+ .- refers to class
+ #login1
+ input[id=login1]
+ input[id=login1][name=login1]
+ 
+ Username-
+ div[class=login-form]
+ .login-form
+ .login-form>div
+ .login-form>div:nth-child(1)
+ .login-form>:nth-child(1)
+ .login-form>:nth-child(2)
+ .login-form>:nth-child(2)>input
+ .login-form>:nth-child(2)>#login1
+ div[class=login-form] > div:nth-child(2) > input
+ div[class=login-form]>:nth-child(2)>input
+ div[class=login-form] > div:nth-child(2) > #login1
+ 
+ shopping
+ #homewrapper > div.icondiv > a:nth-child(6) > div > u
+ div[class=divicon relative]
+.divicon.relative
+.divcon
+.divicon.relative>u
+
+News
+#hm_top_navlink_div>div:nth-child(1)
+#hm_top_navlink_div>div:nth-child(1) 
+#hm_top_navlink_div>a:nth-child(3)>div
+#hm_top_navlink_div>:nth-child(3)>div
+
+ forgot password - 
+.floatR>a   - 2
+.f14.margTop10.form-label>div:nth-child(2)>a
+.f14.margTop10.form-label>:nth-child(2)>a
+.f14.margTop10.form-label>:nth-child(2)>:nth-child(1)
+body > div > div.content-area > div.rhs-area.floatR > div.login-area-free.floatR > div > form > div > div.f14.margTop10.form-label > div.floatR > a
+
+Home-
+div[class=head-wrapper]>div:nth-child(2)>a-  home
+.head-wrapper>.floatR>a - home
+body > div > div.head-wrapper > div.floatR > a
+
+
+ rediff shopping
+ ^- starts with
+ *- contains
+ $- ends with
+ span[id^=topcat]
+ yahoo 
+ 
