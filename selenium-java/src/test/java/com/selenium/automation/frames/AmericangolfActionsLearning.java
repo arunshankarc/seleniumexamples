@@ -12,7 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class Americangolf {
+public class AmericangolfActionsLearning {
 
 	public static void main(String[] args) {
 		System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, "null");
@@ -28,6 +28,7 @@ public class Americangolf {
 		
 		//driver.findElement(By.xpath("//*[@id='CLUBS_1']/ul/li[3]/ul/li/a/span[1]")).click();
 		
+		// find outer box
 		WebElement box = driver.findElement(By.xpath("//*[@id='CLUBS_1']"));
 		List<WebElement> links = box.findElements(By.tagName("a"));
 		Random r = new Random();
@@ -36,7 +37,6 @@ public class Americangolf {
 		String text=links.get(n).getText();
 		System.out.println(text);
 		links.get(n).click();
-
 	}
 
 }
